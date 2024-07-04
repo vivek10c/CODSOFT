@@ -226,10 +226,62 @@ body {
 }
 .about-text p{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.4;
     margin-bottom: 4rem
 }
+.tab-titles {
+    display: flex;
+    height: 50px;
+    /* margin: 0 0 0; */
+}
+
+.tab-contents-container{
+    display: flex;
+    height: 150px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E0A94E;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    transition: 0.25s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #E0A94E;
+    font-size: medium;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
 #services{
     color: aliceblue;
     font-size: 20px;
@@ -559,7 +611,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#E0A94E);
+    background: linear-gradient(rgba(0,0,0,0.1),#ffffff);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -711,7 +763,7 @@ section{
     color: #081b29;
     box-shadow: 0 0 20px #E0A94E;
 }
-.last-text p{
+.last-text {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -719,6 +771,20 @@ section{
     font-weight: 300;
     margin-top: 70px;
 }
+.footer-links{
+    margin-top: 10px;
+}
+.footer-links a{
+    color:#ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.footer-links a:hover{
+    color: #e6b800;
+}
+
 .top{
     position: fixed;
     bottom: 2.1rem;
