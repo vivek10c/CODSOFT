@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 :root {
-  --primary-color: #3685fb;
-  --primary-color-dark: #2f73d9;
-  --secondary-color: #fafcff;
-  --text-dark: #0d213f;
-  --text-light: #767268;
-  --extra-light: #ffffff;
+  --primary-color: #ff6b6b; /* Vibrant Red */
+  --primary-color-dark: #c45656; /* Darker Red */
+  --secondary-color: #2e2e2e; /* Dark Grey */
+  --text-dark: #ffffff; /* White */
+  --text-light: #d3d3d3; /* Light Grey */
+  --extra-light: #1c1c1c; /* Very Dark Grey */
   --max-width: 1200px;
 }
 
@@ -40,7 +40,7 @@
 
 .section__subtitle {
   font-size: 1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   max-width: calc(var(--max-width) / 2);
 }
 
@@ -49,7 +49,7 @@
   outline: none;
   border: none;
   font-size: 1rem;
-  color: var(--extra-light);
+  color: var(--text-dark);
   background-color: var(--primary-color);
   border-radius: 5rem;
   cursor: pointer;
@@ -71,6 +71,8 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--extra-light);
+  color: var(--text-light);
 }
 
 nav {
@@ -107,7 +109,7 @@ nav {
 
 .link a {
   padding: 0 1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   transition: 0.3s;
 }
 
@@ -270,7 +272,7 @@ header {
   transform: translateX(-50%);
   text-align: center;
   color: var(--extra-light);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 248, 248, 0.7);
   backdrop-filter: blur(4px);
   border-radius: 10px;
   z-index: 1;
@@ -368,6 +370,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
 
 .gallary__col {
   display: grid;
